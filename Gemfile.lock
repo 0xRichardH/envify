@@ -17,6 +17,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   envify!
@@ -24,4 +25,4 @@ DEPENDENCIES
   rake (~> 13.0)
 
 BUNDLED WITH
-   2.4.10
+   2.4.6
