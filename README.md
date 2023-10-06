@@ -4,11 +4,11 @@ Create `.env` by evaluating `.env.erb` (or `.env.staging.erb -> .env.staging` wh
 
 ## Installation
 
-TODO
+```bash
+gem install envify
+```
 
 ## Usage
-
-TODO: Write usage instructions here
 
 ```bash
 envify generate -d example
