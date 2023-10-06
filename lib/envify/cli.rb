@@ -20,7 +20,7 @@ module Envify
         env_path          = '.env'
       end
 
-      File.write(env_path, ERB.new(File.read(env_template_path)).result, perm: 0o600)
+      File.write(env_path, ERB.new(File.read(env_template_path), trim_mode: '>').result, perm: 0o600)
     end
   end
 end
