@@ -23,8 +23,9 @@ Gem::Specification.new do |spec|
       (File.expand_path(f) == __FILE__) || f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor])
     end
   end
-  spec.executables = %w[envify]
+  spec.executables << 'envify'
   spec.require_paths = ['lib']
+  spec.bindir = 'libexe'
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
