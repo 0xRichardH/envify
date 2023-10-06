@@ -3,8 +3,12 @@ name: Ruby Gem
 on:
   push:
     branches: ["main"]
+    paths:
+      - "lib/envify/version.rb"
   pull_request:
     branches: ["main"]
+    paths:
+      - "lib/envify/version.rb"
 
 jobs:
   build:
