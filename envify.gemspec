@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'Create .env by evaluating .env.erb'
   spec.description = 'Create .env by evaluating .env.erb (or .env.staging.erb -> .env.staging when using -d staging)'
-  spec.homepage = 'https://0xdev.dev'
+  spec.homepage = 'https://github.com/0xRichardH/envify'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2'
 

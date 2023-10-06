@@ -14,7 +14,7 @@ class TestEnvify < Minitest::Test
 
     Envify::Cli.start(['generate', '-d', 'example'])
 
-    assert_equal File.read(generated_file), "HELLO=world\n"
+    assert_equal File.read(generated_file), "HELLO=world\n\n"
   ensure
     # clean up the generated file
     File.delete(generated_file)
