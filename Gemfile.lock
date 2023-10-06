@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    envify (0.1.0)
+      erb (~> 4.0)
+      thor (~> 1.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cgi (0.3.6)
+    erb (4.0.3)
+      cgi (>= 0.3.3)
+    minitest (5.20.0)
+    rake (13.0.6)
+    thor (1.2.2)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  envify!
+  minitest (~> 5.0)
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.4.10
