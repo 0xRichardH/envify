@@ -20,6 +20,25 @@ or
 envify g -d example
 ```
 
+## Example
+
+- Bitwarden
+
+```shell
+<% if (session_token=`bw unlock --raw`.strip) != "" %>
+YOUR_SECRET=<%= `bw get notes 000000000000000-000000-11111-1111-22222222222222 --session #{session_token}` %>
+<% else raise ArgumentError, "session_token token missing" end %>
+```
+
+- 1password
+
+```shell
+<% if (session_token = `op signin --account my-one-password-account --raw`.strip) != "" %>
+GITHUB_TOKEN=<%= `gh config get -h github.com oauth_token`.strip %>
+YOUR_SECRET=<%= `op read "op://Vault/My App/YOUR_SECRET" -n --session #{session_token}` %>
+<% else raise ArgumentError, "Session token missing" end %>
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
